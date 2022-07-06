@@ -1,0 +1,12 @@
+# aws_iam_instance_profile.jfrog-role:
+resource "aws_iam_instance_profile" "jfrog-role" {
+    arn         = "arn:aws:iam::781545506517:instance-profile/jfrog-role"
+    create_date = "2022-06-27T18:37:38Z"
+    id          = "jfrog-role"
+    name        = "jfrog-role"
+    path        = "/"
+    role        = "jfrog-role"
+    tags        = {}
+    tags_all    = {}
+    unique_id   = "AIPA3L556A3KWXEDOIITQ"
+}

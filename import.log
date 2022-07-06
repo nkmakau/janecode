@@ -1,0 +1,198 @@
+
+Initializing the backend...
+
+Initializing provider plugins...
+- Finding hashicorp/aws versions matching "4.13.0"...
+- Finding latest version of hashicorp/awscc...
+- Installing hashicorp/aws v4.13.0...
+- Installed hashicorp/aws v4.13.0 (signed by HashiCorp)
+- Installing hashicorp/awscc v0.26.0...
+- Installed hashicorp/awscc v0.26.0 (signed by HashiCorp)
+
+Terraform has created a lock file .terraform.lock.hcl to record the provider
+selections it made above. Include this file in your version control repository
+so that Terraform can guarantee to make the same selections by default when
+you run "terraform init" in the future.
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+aws --profile default --region us-west-2 --output json ec2 describe-transit-gateways
+aws --profile default --region us-west-2 --output json organizations describe-organization
+This is either not an AWS organizations account or you don't have access
+aws --profile default --region us-west-2 --output json organizations list-accounts
+This is either not an AWS organizations account or you don't have access
+This is either not an AWS organizations account or you don't have access
+This is either not an AWS organizations account or you don't have access
+This is either not an AWS organizations account or you don't have access
+aws_iam_instance_profile jfrog-role import
+Waiting for 1 Terraform imports
+Imported aws_iam_instance_profile.jfrog-role
+Finished importing
+Starting state mv for aws_iam_instance_profile
+moved state aws_iam_instance_profile.jfrog-role
+aws_iam_instance_profile jfrog-role tf files
+aws_iam_role jfrog-role /
+[0m[1maws_iam_role.jfrog-role: Importing from ID "jfrog-role"...[0m
+[0m[1m[32maws_iam_role.jfrog-role: Import prepared![0m
+Import successful!
+role policies jfrog-role
+attached role policies jfrog-role
+aws_iam_role_policy_attachment jfrog-role__AWSSSODirectoryAdministrator import
+[0m[1maws_iam_role_policy_attachment.jfrog-role__AWSSSODirectoryAdministrator: Importing from ID "jfrog-role/arn:aws:iam::aws:policy/AWSSSODirectoryAdministrator"...[0m
+[0m[1m[32maws_iam_role_policy_attachment.jfrog-role__AWSSSODirectoryAdministrator: Import prepared![0m
+Import successful!
+skipping AWS managed policy arn:aws:iam::aws:policy/AWSSSODirectoryAdministrator
+aws_iam_role_policy_attachment jfrog-role__AWSHealthFullAccess import
+[0m[1maws_iam_role_policy_attachment.jfrog-role__AWSHealthFullAccess: Importing from ID "jfrog-role/arn:aws:iam::aws:policy/AWSHealthFullAccess"...[0m
+[0m[1m[32maws_iam_role_policy_attachment.jfrog-role__AWSHealthFullAccess: Import prepared![0m
+Import successful!
+skipping AWS managed policy arn:aws:iam::aws:policy/AWSHealthFullAccess
+aws_iam_role_policy_attachment jfrog-role__AmazonRDSFullAccess import
+[0m[1maws_iam_role_policy_attachment.jfrog-role__AmazonRDSFullAccess: Importing from ID "jfrog-role/arn:aws:iam::aws:policy/AmazonRDSFullAccess"...[0m
+[0m[1m[32maws_iam_role_policy_attachment.jfrog-role__AmazonRDSFullAccess: Import prepared![0m
+Import successful!
+skipping AWS managed policy arn:aws:iam::aws:policy/AmazonRDSFullAccess
+aws_iam_role_policy_attachment jfrog-role__SupportUser import
+[0m[1maws_iam_role_policy_attachment.jfrog-role__SupportUser: Importing from ID "jfrog-role/arn:aws:iam::aws:policy/job-function/SupportUser"...[0m
+[0m[1m[32maws_iam_role_policy_attachment.jfrog-role__SupportUser: Import prepared![0m
+Import successful!
+skipping AWS managed policy arn:aws:iam::aws:policy/job-function/SupportUser
+aws_iam_role_policy_attachment jfrog-role__AmazonEC2FullAccess import
+[0m[1maws_iam_role_policy_attachment.jfrog-role__AmazonEC2FullAccess: Importing from ID "jfrog-role/arn:aws:iam::aws:policy/AmazonEC2FullAccess"...[0m
+[0m[1m[32maws_iam_role_policy_attachment.jfrog-role__AmazonEC2FullAccess: Import prepared![0m
+Import successful!
+skipping AWS managed policy arn:aws:iam::aws:policy/AmazonEC2FullAccess
+aws_iam_role jfrog-role /
+aws_iam_role__jfrog-role.tf exists already skipping
+[31m[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mAttribute name required[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  on  line 1:
+[31m│[0m [0m  (source code not available)
+[31m│[0m [0m
+[31m│[0m [0mDot must be followed by attribute name.
+[31m╵[0m[0m
+[0m[0m
+aws --profile default --region us-west-2 --output json kms list-keys
+You don't have access for this resource alias/aws/dynamodb
+You don't have access for this resource alias/aws/ebs
+You don't have access for this resource alias/aws/elasticfilesystem
+You don't have access for this resource alias/aws/es
+You don't have access for this resource alias/aws/glue
+You don't have access for this resource alias/aws/kinesisvideo
+You don't have access for this resource alias/aws/rds
+You don't have access for this resource alias/aws/redshift
+You don't have access for this resource alias/aws/redshifttest
+You don't have access for this resource alias/aws/s3
+You don't have access for this resource alias/aws/ssm
+You don't have access for this resource alias/aws/xray
+aws_vpc vpc-0349a9202ee82357d import
+Waiting for 1 Terraform imports
+Imported aws_vpc.vpc-0349a9202ee82357d
+Finished importing
+Starting state mv for aws_vpc
+moved state aws_vpc.vpc-0349a9202ee82357d
+aws_subnet subnet-008d9c21feddbf6a8 import
+aws_subnet subnet-069ee155c08cc089e import
+aws_subnet subnet-0e6ff1a3b0baf3ff8 import
+aws_subnet subnet-0f7b9f347fd2fee01 import
+Waiting for 4 Terraform imports
+Imported aws_subnet.subnet-0f7b9f347fd2fee01
+Imported aws_subnet.subnet-008d9c21feddbf6a8
+Imported aws_subnet.subnet-069ee155c08cc089e
+Imported aws_subnet.subnet-0e6ff1a3b0baf3ff8
+Finished importing
+Starting state mv for aws_subnet
+moved state aws_subnet.subnet-008d9c21feddbf6a8
+moved state aws_subnet.subnet-069ee155c08cc089e
+moved state aws_subnet.subnet-0e6ff1a3b0baf3ff8
+moved state aws_subnet.subnet-0f7b9f347fd2fee01
+aws_subnet subnet-008d9c21feddbf6a8 tf files
+No state files in pi2 skipping ...
+aws_vpc__vpc-0349a9202ee82357d.tf exists already skipping
+aws_subnet subnet-069ee155c08cc089e tf files
+No state files in pi2 skipping ...
+aws_vpc__vpc-0349a9202ee82357d.tf exists already skipping
+aws_subnet subnet-0e6ff1a3b0baf3ff8 tf files
+No state files in pi2 skipping ...
+aws_vpc__vpc-0349a9202ee82357d.tf exists already skipping
+aws_subnet subnet-0f7b9f347fd2fee01 tf files
+No state files in pi2 skipping ...
+aws_vpc__vpc-0349a9202ee82357d.tf exists already skipping
+aws --profile default --region us-west-2 --output json ec2 describe-network-acls
+true
+aws_default_network_acl acl-0d432a08ea3204544
+[0m[1maws_default_network_acl.acl-0d432a08ea3204544: Importing from ID "acl-0d432a08ea3204544"...[0m
+[0m[1m[32maws_default_network_acl.acl-0d432a08ea3204544: Import prepared![0m
+Import successful!
+true
+aws_security_group sg-076ef369812c0a3e4 import
+is default data...
+Waiting for 1 Terraform imports
+Imported aws_security_group.sg-076ef369812c0a3e4
+Finished importing
+Starting state mv for aws_security_group
+moved state aws_security_group.sg-076ef369812c0a3e4
+aws_security_group sg-076ef369812c0a3e4
+Generating aws_security_group__sg-076ef369812c0a3e4.tf
+No state files in pi2 skipping ...
+aws_vpc__vpc-0349a9202ee82357d.tf exists already skipping
+aws_security_group_rule sg-076ef369812c0a3e4 sg-076ef369812c0a3e4 1 terraform file
+Importing imp_aws_security_group_rule_sg-076ef369812c0a3e4_ingress_1.sh
+[0m[1maws_security_group_rule.sg-076ef369812c0a3e4_ingress_1: Importing from ID "sg-076ef369812c0a3e4_ingress_all_0_65536_self"...[0m
+[0m[1m[32maws_security_group_rule.sg-076ef369812c0a3e4_ingress_1: Import prepared![0m
+Import successful!
+aws_security_group_rule sg-076ef369812c0a3e4 sg-076ef369812c0a3e4 1 terraform file
+Importing imp_aws_security_group_rule_sg-076ef369812c0a3e4_egress_1.sh
+[0m[1maws_security_group_rule.sg-076ef369812c0a3e4_egress_1: Importing from ID "sg-076ef369812c0a3e4_egress_all_0_65536_0.0.0.0/0"...[0m
+[0m[1m[32maws_security_group_rule.sg-076ef369812c0a3e4_egress_1: Import prepared![0m
+Import successful!
+aws_vpc_dhcp_options dopt-04dfac881a9c71bfa import
+[0m[1maws_vpc_dhcp_options.dopt-04dfac881a9c71bfa: Importing from ID "dopt-04dfac881a9c71bfa"...[0m
+[0m[1m[32maws_vpc_dhcp_options.dopt-04dfac881a9c71bfa: Import prepared![0m
+Import successful!
+aws_internet_gateway igw-050203062ea5fd49a import
+[0m[1maws_internet_gateway.igw-050203062ea5fd49a: Importing from ID "igw-050203062ea5fd49a"...[0m
+[0m[1m[32maws_internet_gateway.igw-050203062ea5fd49a: Import prepared![0m
+Import successful!
+aws_route_table rtb-01a18b121ab11643f import
+[0m[1maws_route_table.rtb-01a18b121ab11643f: Importing from ID "rtb-01a18b121ab11643f"...[0m
+[0m[1m[32maws_route_table.rtb-01a18b121ab11643f: Import prepared![0m
+Import successful!
+aws --profile default --region us-west-2 --output json ec2 describe-vpc-endpoints
+aws --profile default --region us-west-2 --output json ec2 describe-transit-gateways
+*** Found 0 running instances skipping... ***
+aws --profile default --region us-west-2 --output json ec2 describe-spot-fleet-requests
+run command .....
+aws --profile default --region us-west-2 --output json  eks update-kubeconfig --name 
+aws --profile default --region us-west-2 --output json ssm list-documents --filters "Key=Owner,Values=Self"
+aws --profile default --region us-west-2 --output json rds describe-db-subnet-groups
+count=0
+aws --profile default --region us-west-2 --output json codeartifact list-domains
+mysub=781545506517
+aws --profile default --region us-west-2 --output json lakeformation get-data-lake-settings
+0
+aws_lakeformation_data_lake_settings c__781545506517
+[0m[1maws_lakeformation_data_lake_settings.c__781545506517: Importing from ID "781545506517"...[0m
+[0m[1m[32maws_lakeformation_data_lake_settings.c__781545506517: Import prepared![0m
+Import successful!
+aws --profile default --region us-west-2 --output json dynamodb list-tables
+aws --profile default --region us-west-2 --output json glue get-databases
+globals = 781545506517 us-west-2
+must pass bus|rulename as parameter exiting ..
+aws --profile default --region us-west-2 --output json  sqs list-queues : You don't have access for this resource
+aws --profile default --region us-west-2 --output json kinesis list-streams
+aws --profile default --region us-west-2 --output json firehose list-delivery-streams
+aws --profile default --region us-west-2 --output json apigateway get-rest-apis
+must pass an identity pool id exiting ...
+must specify user pool id exiting ...
+aws --profile default --region us-west-2 --output json cloudfront list-distributions
+aws --profile default --region us-west-2 --output json  cloudfront list-distributions : You don't have access for this resource
+aws --profile default --region us-west-2 --output json cloudformation list-stacks

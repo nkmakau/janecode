@@ -1,0 +1,1 @@
+terraform import aws_iam_role_policy_attachment.jfrog-role__AWSHealthFullAccess jfrog-role__AWSHealthFullAccess
